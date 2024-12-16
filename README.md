@@ -10,12 +10,12 @@
 ## a - development tools, infrastructure
 
 Before any software project we need to talk about the development tools and infrastructure.  
-There are so many options that one can be lost in a maze of choice and never ever leave it with something concrete.  
+There are so many options that one can be lost in a maze of choices and never ever leave it with something concrete.  
 Limiting the choice and freedom will boost the productivity. Human brains are capable of doing very few thing simultaneously.
 
 ### aa - operating systems
 
-There are many operating systems in the world. We have to limit our effort to be productive.
+There are many operating systems in the world. We have to limit our learning and effort to be productive.
 
 - aaa - Linux  
 Linux is my operating system of choice. It is open-source and free and it runs most of the internet servers. It does not need to have a graphic user interface for running databases and web servers. I like to use Debian for its stability. We will not experiment new things on the server side.  
@@ -29,16 +29,16 @@ On my phone I have android. It will not matter for this project.
 - aae - MacOS and iOS  
 I will avoid doing anything directly on these OS.
 - aaj - virtual machines  
-OS can run on bare metal or inside a VM virtual machine. VM are great to isolate simpler things running on the same beefy machine.
+OS can run on bare metal or inside a VM virtual machine. VM are great to isolate simpler things running on one beefy machine.
 - aak - Linux containers  
-Linux has [containers](https://github.com/CRUSTDE-ContainerizedRustDevEnv/crustde_cnt_img_pod) that are kind of small VM. It is not a perfect equivalent, but it is good for isolation, but not great. I know about docker, but I choose to use Podman instead. I like to have my development environment inside a container [CRUSTDE](https://github.com/CRUSTDE-ContainerizedRustDevEnv).
+Linux has [containers](https://github.com/CRUSTDE-ContainerizedRustDevEnv/crustde_cnt_img_pod) that are kind of small VM. It is not a perfect equivalent, but it is good for isolation, albeit not great. I know about Docker, but I choose to use the alternative Podman instead. I like to have my development environment inside a container [CRUSTDE](https://github.com/CRUSTDE-ContainerizedRustDevEnv).
 
 ### ab - networks
 
 - aba - tcp, ip and udp  
 The Internet protocol suite is the basis of internet communication. I will not use them directly.
 - abb - web http request-response  
-This protocol is simple to think about and strong enough for most of the internet.
+This protocol is simple to think about and strong enough for most of the internet. The client sends a request and the server reply with a response. Nothing more to see here.
 - abc - websockets  
 Finally there is a simultaneous two-way communication channel on the internet.
 - abd - http2  
@@ -54,12 +54,19 @@ The SSH protocol is the standard way for remote work and file copy in Linux.
 
 ### ac - postgres database
 
-- aca - database servers
+- aca - database servers  
+I run the Postgres server on Linux directly or in a container. The default port is 5432. In the container I use VSCode to forward the port 5432, so I can connect to the server from Windows.
 - acb - database config
-- acc - tables, fields, indexes
-- acd - views, procedures, functions,...
-- ace - administrative tools inside the database
-- acj - database editor
+The initial databases of postgres are: postgres, template1 and template0. We should create a new database.
+- acc - users and roles
+The default admin user is called postgres. It is wise to create new users for different purposes. It is good to split the admin and normal user.
+- acd - tables, fields, indexes
+
+- ace - views, procedures, functions,...
+- acf - administrative tools inside the database
+- acg - database editor
+For now I will use DBeaver on Windows, but I hope to find something else over time. I tried the VSCode extension, but it is not great.
+
 
 ### ad - Rust language
 
@@ -74,7 +81,7 @@ They come along the installation like the linter Clippy or separately like cargo
 - ade - cargo-auto  
 All the actions we repeat as developers must be automated. I created the tool [automation_tasks_rs and cargo-auto](https://github.com/automation-tasks-rs) for that purpose.
 - adf - cross platform compiling  
-If needed RUst compiler on Linux can build an executable for Windows. That is nice. 
+If needed Rust compiler on Linux can build an executable for Windows. That is nice.
 - adi - development container crustde  
 I like to have my development environment in a [Linux container CRUSTDE](https://github.com/CRUSTDE-ContainerizedRustDevEnv)
 - adj - VSCode as Rust editor
@@ -82,12 +89,11 @@ VSCode is great. I like to use VSCode in Windows and remote connect to the Linux
 - adk - Rust analyzer  
 rust-analyzer is an implementation of Language Server Protocol for the Rust programming language. It provides features like completion and goto definition for many code editors, including VS Code.
 - adl - borrow checker  
-Rust memory safety is achieved with these concepts: ownership, borrowing and lifetimes. It is a steep learning curve, but once you learn it it becomes automatic to think with these concepts in mind.
-- adm - expressions
+Rust memory safety is achieved with these concepts: ownership, borrowing and lifetimes. It is a steep learning curve, but once you learn it, it becomes automatic to think with these concepts in mind.
+- adm - expressions  
 Rust is primarily an expression-based language. Nearly anything can return a value.
-- adn - variable scope and shadowing
-Variable bindings have a scope, and are constrained to live in a block. A block is a collection of statements enclosed by braces {}. Shadowing is a strange, but useful concept. When we declare a new variable with the same name as a previous variable. The new variable shadows the previous variable. It is really useful, but I critique the choice of making it implicit and not explicit.
-
+- adn - variable scope and shadowing  
+Variable bindings have a scope, and are constrained to live in a block. A block is a collection of statements enclosed by braces {}. Shadowing is a strange, but useful concept. When we declare a new variable with the same name as a previous variable, the new variable shadows the previous variable. It is really useful, but I critique the choice of making it implicit and not explicit.
 
 ### af - AXUM web server
 
