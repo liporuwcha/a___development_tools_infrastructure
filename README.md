@@ -9,26 +9,50 @@
 
 ## a - development tools, infrastructure
 
-Namespaces with 2 and 3 letters. This list will grow eventually.
+Before any software project we need to talk about the development tools and infrastructure.  
+There are so many options that one can be lost in a maze of choice and never ever leave it with something concrete.  
+Limiting the choice and freedom will boost the productivity. Human brains are capable of doing very few thing simultaneously.
 
-aa - operating systems
+### aa - operating systems
 
-- aaa - Linux
-- aab - Windows
-- aac - WSL on Windows
-- aad - android
-- aae - MacOS and iOS
+There are many operating systems in the world. We have to limit our effort to be productive.
 
-ab - networks
+- aaa - Linux  
+Linux is my operating system of choice. It is open-source and free and it runs most of the internet servers. It does not need to have a graphic user interface for running databases and web servers. I like to use Debian for its stability. We will not experiment new things on the server side.  
 
-- aba - tcp/ip
-- abb - web http request-response
-- abc - websockets
-- abd - http2
-- abe - http3
-- abf - server side events
+- aab - Windows  
+I have [Windows](https://github.com/CRUSTDE-ContainerizedRustDevEnv/windows_reinstall) on my laptop, but I will not use it directly for development.
+- aac - WSL on Windows  
+We can have simultaneously Linux and Windows on the machine using [WSL - Windows Subsystem for Linux](https://github.com/CRUSTDE-ContainerizedRustDevEnv/win10_wsl2_debian11). It works fine for me.
+- aad - android  
+On my phone I have android. It will not matter for this project.
+- aae - MacOS and iOS  
+I will avoid doing anything directly on these OS.
+- aaj - virtual machines  
+OS can run on bare metal or inside a VM virtual machine. VM are great to isolate simpler things running on the same beefy machine.
+- aak - Linux containers  
+Linux has [containers](https://github.com/CRUSTDE-ContainerizedRustDevEnv/crustde_cnt_img_pod) that are kind of small VM. It is not a perfect equivalent, but it is good for isolation, but not great. I know about docker, but I choose to use Podman instead. I like to have my development environment inside a container [CRUSTDE](https://github.com/CRUSTDE-ContainerizedRustDevEnv).
 
-ac - postgres database
+### ab - networks
+
+- aba - tcp, ip and udp  
+The Internet protocol suite is the basis of internet communication. I will not use them directly.
+- abb - web http request-response  
+This protocol is simple to think about and strong enough for most of the internet.
+- abc - websockets  
+Finally there is a simultaneous two-way communication channel on the internet.
+- abd - http2  
+I don't know. I hope it is just an upgrade and it is backward compatible.
+- abe - http3  
+I don't know. I hope it is just an upgrade and it is backward compatible.
+- abf - server-sent events  
+SSE allows the server to push data to the client.
+- abg - SSL, TLS and HTTPS  
+This technology is securing the internet connection by encrypting data sent between a website and a browser.
+- abj - ssh  
+The SSH protocol is the standard way for remote work and file copy in Linux.
+
+### ac - postgres database
 
 - aca - database servers
 - acb - database config
@@ -37,21 +61,41 @@ ac - postgres database
 - ace - administrative tools inside the database
 - acj - database editor
 
-ad - Rust language
+### ad - Rust language
 
-- ada - Rust language
-- adb - cargo crate dependencies
-- adc - cross platform compiling
-- add - development container crustde
+- ada - Rust language  
+[Rust](https://www.rust-lang.org/) is a language empowering everyone to build reliable and efficient software. It is low level as C and does not have a garbage collector. It is striving to be safe against memory bugs.
+- adb - rust compiler
+Rustc is the rust frontend compiler. It uses LLVM for the backend compiler. I like to change the default linker to MOLD.
+- adc - cargo crate dependencies  
+Libraries for Rust are called crates. They are published on [crates.io](https://crates.io/). My personal problem is that I cannot trust these libraries. For one project I need hundreds of them and I just cannot trust them. But there is nothing I can do. It will be fine for hobby projects, but not for any production.
+- add - other Rust tools  
+They come along the installation like the linter Clippy or separately like cargo-auto.
+- ade - cargo-auto  
+All the actions we repeat as developers must be automated. I created the tool [automation_tasks_rs and cargo-auto](https://github.com/automation-tasks-rs) for that purpose.
+- adf - cross platform compiling  
+If needed RUst compiler on Linux can build an executable for Windows. That is nice. 
+- adi - development container crustde  
+I like to have my development environment in a [Linux container CRUSTDE](https://github.com/CRUSTDE-ContainerizedRustDevEnv)
 - adj - VSCode as Rust editor
+VSCode is great. I like to use VSCode in Windows and remote connect to the Linux container CRUSTDE in Linux on WSL.
+- adk - Rust analyzer  
+rust-analyzer is an implementation of Language Server Protocol for the Rust programming language. It provides features like completion and goto definition for many code editors, including VS Code.
+- adl - borrow checker  
+Rust memory safety is achieved with these concepts: ownership, borrowing and lifetimes. It is a steep learning curve, but once you learn it it becomes automatic to think with these concepts in mind.
+- adm - expressions
+Rust is primarily an expression-based language. Nearly anything can return a value.
+- adn - variable scope and shadowing
+Variable bindings have a scope, and are constrained to live in a block. A block is a collection of statements enclosed by braces {}. Shadowing is a strange, but useful concept. When we declare a new variable with the same name as a previous variable. The new variable shadows the previous variable. It is really useful, but I critique the choice of making it implicit and not explicit.
 
-af - AXUM web server
 
-ai - SSR server side rendering
+### af - AXUM web server
 
-aj - client side rendering
+### ai - SSR server side rendering
 
-ak - WASM, javascript
+### aj - client side rendering
+
+### ak - WASM, javascript
 
 ## Open-source and free as a beer
 
