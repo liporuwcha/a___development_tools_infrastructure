@@ -2,11 +2,10 @@
 
 ***liporuwcha namespace "a - development tools, infrastructure"***
 
- ![maintained](https://img.shields.io/badge/maintained-green)
  ![work-in-progress](https://img.shields.io/badge/work_in_progress-yellow)
  ![rustlang](https://img.shields.io/badge/rustlang-orange)
  ![postgres](https://img.shields.io/badge/postgres-orange)
- ![liporuwcha](https://bestia.dev/webpage_hit_counter/get_svg_image/000.svg)
+ ![a_development_tools_infrastructure](https://bestia.dev/webpage_hit_counter/get_svg_image/1773735898.svg)
 
 ## a - development tools, infrastructure
 
