@@ -67,7 +67,6 @@ The default admin user is called postgres. It is wise to create new users for di
 - acg - database editor
 For now I will use DBeaver on Windows, but I hope to find something else over time. I tried the VSCode extension, but it is not great.
 
-
 ### ad - Rust language
 
 - ada - Rust language  
@@ -102,6 +101,12 @@ Variable bindings have a scope, and are constrained to live in a block. A block 
 ### aj - client side rendering
 
 ### ak - WASM, javascript
+
+- aka - javascript or ecmascript  
+I don't like this language. I will avoid it as much as possible.
+- aka - WebAssembly/WASM  
+I will use WASM anywhere it used to be javascript. It can be coded in Rust and compiled to a WASM target.
+It works inside all of the modern browsers and even outside of the browser with a wasm runtime.
 
 ## Open-source and free as a beer
 
