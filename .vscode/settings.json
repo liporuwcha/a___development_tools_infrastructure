@@ -32,6 +32,7 @@
         "substack",
         "Tauri",
         "thiserror",
+        "varchar",
         "zcvf",
         "zdravje"
     ]
