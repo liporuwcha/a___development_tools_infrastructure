@@ -219,7 +219,7 @@ The presence of Cargo.toml is used by cargo-auto to recognize project folders.
 
 ### al - client side rendering
 
-### aw - WASM, javascript
+### aw - WASM/Webassembly, javascript
 
 - aka_ javascript or ecmascript  
 I don't like this language. I will avoid it as much as possible.
