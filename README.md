@@ -1,19 +1,19 @@
-# a_development_tools_infrastructure
+# a___development_tools_infrastructure
 
 ***liporuwcha namespace "a - development tools, infrastructure"***
 
  ![work-in-progress](https://img.shields.io/badge/work_in_progress-yellow)
  ![rustlang](https://img.shields.io/badge/rustlang-orange)
  ![postgres](https://img.shields.io/badge/postgres-orange)
- ![a_development_tools_infrastructure](https://bestia.dev/webpage_hit_counter/get_svg_image/1773735898.svg)
+ ![a___development_tools_infrastructure](https://bestia.dev/webpage_hit_counter/get_svg_image/1773735898.svg)
 
-## a - development tools, infrastructure
+## a___ development tools, infrastructure
 
 Before any software project we need to talk about the development tools and infrastructure.  
 There are so many options that one can be lost in a maze of choices and never ever leave it with something concrete.  
 Limiting the choice and freedom will boost the productivity. Human brains are capable of doing very few thing simultaneously.
 
-### aa - operating systems
+### aa__ operating systems
 
 There are many operating systems in the world. We have to limit our learning and effort to be productive.
 
@@ -45,7 +45,7 @@ OS can run on bare metal or inside a VM virtual machine. VM are great to isolate
 
 Linux has [containers](https://github.com/CRUSTDE-ContainerizedRustDevEnv/crustde_cnt_img_pod) that are kind of small VM. It is not a perfect equivalent, but it is good for isolation, albeit not great. I know about Docker, but I choose to use the alternative Podman instead. I like to have my development environment inside a container [CRUSTDE](https://github.com/CRUSTDE-ContainerizedRustDevEnv).
 
-### ab - networks
+### ab__ networks
 
 #### aba_ tcp, ip and udp  
 
@@ -83,7 +83,7 @@ The SSH protocol is the standard way for remote work and file copy in Linux.
 
 REST API is a way of accessing web services in a simple and flexible way without having any processing. But I need something simpler than that.
 
-### ad - postgres database
+### ad__ postgres database
 
 #### ada_ database servers  
 
@@ -150,7 +150,7 @@ The part of unicode that can write and read to a computer file is called "encodi
 Postgres 13 can use collations. Every text/char/varchar column can have a different collation. That sounds good. But I am afraid that using collation we loose the use of the LIKE operator. And I like the LIKE operator !  
 I will try and see going forward.
 
-### ar - Rust language
+### ar__ Rust language
 
 #### ara_ Rust language  
 
@@ -213,13 +213,13 @@ I will use [cargo-auto](https://github.com/automation-tasks-rs/cargo-auto/) to a
 Then I'll code the `automation_tasks_rs` on the workspace level to call all members tasks together.
 The presence of Cargo.toml is used by cargo-auto to recognize project folders.
 
-### ax - AXUM web server
+### ax__ AXUM web server
 
-### as - SSR server side rendering
+### as__ SSR server side rendering
 
-### al - client side rendering
+### al__ client side rendering
 
-### aw - WASM/Webassembly, javascript
+### aw__ WASM/Webassembly, javascript
 
 - aka_ javascript or ecmascript  
 I don't like this language. I will avoid it as much as possible.
