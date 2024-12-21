@@ -87,7 +87,7 @@ REST API is a way of accessing web services in a simple and flexible way without
 
 #### ada_ database servers  
 
-I run the Postgres server on Linux directly or in a container. The default port is 5432. In the container I use VSCode or SSH tunneling to forward the port 5432, so I can connect to the server from Windows.
+I run the Postgres server on Linux directly or in a container. The default port is 5432. In the container I use SSH tunneling to forward the port 5432, so I can connect to the server from Windows.
 
 #### adb_ database config
 
@@ -103,9 +103,9 @@ The default admin user is called postgres. It is wise to create new users for di
 
 #### adf_ administrative tools inside the database
 
-#### adg_ database editor VSCode SqlTools
+#### adg_ database editor VSCode DatabaseClient from Weijan Chen
 
-The VSCode extension to work with Postgres is SQLTools. It creates a connection over tcp to the Postgres server. If needed I use SSH tunneling when I use containers.  
+The VSCode extension to work with Postgres is DatabaseClient. It creates a connection over tcp to the Postgres server. If need, I use SSH tunneling when I use containers.  
 
 #### adj_ SQL language dialect for Postgresql
 
