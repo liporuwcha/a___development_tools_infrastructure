@@ -91,11 +91,11 @@ I run the Postgres server on Linux directly or in a container. The default port 
 
 #### adb_ database config
 
-The initial databases of postgres are: postgres, template1 and template0. We should create a new database.
+The initial databases of postgres are: `postgres`, `template1` and `template0`. We should create a new database.
 
 #### adc_ users and roles
 
-The default admin user is called postgres. It is wise to create new users for different purposes. It is good to split the admin and normal user.
+The default admin user is called `postgres`. It is wise to create new users for different purposes. It is good to split the admin and normal user.
 
 #### add_ tables, fields, indexes
 
