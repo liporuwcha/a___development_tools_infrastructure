@@ -5,6 +5,7 @@
  ![work-in-progress](https://img.shields.io/badge/work_in_progress-yellow)
  ![rustlang](https://img.shields.io/badge/rustlang-orange)
  ![postgres](https://img.shields.io/badge/postgres-orange)
+ ![License](https://img.shields.io/badge/license-MIT-blue.svg)
  ![a___development_tools_infrastructure](https://bestia.dev/webpage_hit_counter/get_svg_image/1773735898.svg)
 
 ## a___ development tools, infrastructure
