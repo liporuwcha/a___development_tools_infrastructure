@@ -1,6 +1,6 @@
 # a___development_tools_infrastructure
 
-***liporuwcha namespace "a - development tools, infrastructure"***
+***liporuwcha namespace a__ development tools, infrastructure***
 
  ![work-in-progress](https://img.shields.io/badge/work_in_progress-yellow)
  ![rustlang](https://img.shields.io/badge/rustlang-orange)
